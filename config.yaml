@@ -1,4 +1,4 @@
-baseURL: https://amandadumi.github.io/statmech_python_tutorials
+baseURL: "https://amandadumi.github.io/statmech_python_tutorials/"
 languageCode: en-us
 defaultContentLanguage: en
 title: Cupper
