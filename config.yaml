@@ -1,7 +1,7 @@
 baseURL: "https://amandadumi.github.io/statmech_python_tutorials/"
 languageCode: en-us
 defaultContentLanguage: en
-title: Cupper
+title: Chem 2440 Ising Model
 theme: cupper-hugo-theme
 googleAnalytics: UA-123456789-1
 disqusShortname: yourdiscussshortname
@@ -17,9 +17,9 @@ imaging:
   quality: 99
 
 params:
-  description: Chem 2430 Statistical Mechanics
-  homeMetaContent: Chem 2430 Statistical Mechanics
-  footer: Chem 2430 Statistical Mechanics
+  description: Chem 2440 Statistical Mechanics
+  homeMetaContent: Chem 2440 Statistical Mechanics
+  footer: Chem 2440 Statistical Mechanics
   # For more date formats see https://gohugo.io/functions/format/
   dateFormat: Jan 2, 2006
   codePenUser: someUser
