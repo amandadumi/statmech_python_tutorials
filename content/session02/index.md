@@ -34,7 +34,7 @@ Now that our notebook is set-up, we're ready to start learning some Python!
 
 ## Assigning variables and data types
 
-Any python interpreter can work just like a calculator.  This is not very useful. Type the following into the next cell of your Jupyter notebook.
+Any python interpreter can work just like a calculator. Type the following into the next cell of your Jupyter notebook.
 
 ```python
 3 + 7
@@ -44,7 +44,7 @@ Any python interpreter can work just like a calculator.  This is not very useful
 10
 ```
 
-Here, Python has performed a calculation for us. To save this value, or other values, we assign them to a variable for later use. The syntax for assigning variables is the following:
+Here, Python has performed a calculation for us. However, this value has not been saved to a variable, meaning we won't be able to access it in subsequent operations. To save this value, or other values, we assign them to a variable for later use. The syntax for assigning variables is the following:
 ```python
 variable_name = variable_value
 ```
@@ -349,9 +349,44 @@ print(negative_numbers)
 
 If you are comparing strings, not numbers, you use different logic operators like `is`, `in`, or `is not`.  We will see these types of logic operators used in our next lesson.  
 
+In some cases, you will multiple cases to consider with the `if` statment. For example, let's say you want to find out if a number is greater than, less than or equal to a given number. For this case, we can use `elif` and `else` statment along with the `if` statment. The `elif` stands for 'else if' and will be used to check a second conditional statement. The `else` can be used if none of the above conditions are met. 
+
+```python
+a = 6
+b = 3
+if b == a:
+  print('the variable is equal to a')
+elif b < a:
+  print('the variable is less than a')
+else:
+  print('the variable is greater than a')
+```
+
+Let's combine the `for` loops we used above and the `if` statements. 
+Suppose that we would like to iterate over the list of energies we used about and stop once we find a value that is greater than zero.
+At times, we will want to exit a loop when a certain condition is met.
+In Python, the `break` statement exits a loop early.
+
+
+```python
+energy_kcal = [-13.4, -2.7, 5.4, 42.1]
+for i in energy_kcal:
+   print(i)
+   if i == 0:
+     print('the energy is equal to zero.')
+   elif i < 0:
+     print('the energy is less than zero.')
+   else: 
+     print('the energy is greater than zero...exiting the loop.')
+     break
+```
+You should notice two things: 
+1. The actions within first if statement are never run since the condition isn't met as we do not have a value equal to zero in the list. 
+2. the number 42.1 is never printed since we exit the loop once the first positive value is encountered.
+
 >## Exercise
 >
-> The following list contains some floating point numbers and some numbers which  have been saved as strings.  Copy this list exactly into your code.
+> The following list contains some floating point numbers and some numbers which have been saved as strings.  Copy this list exactly into your code.
 > ```python
 > data_list = ['-12.5', 14.4, 8.1, '42']
 > ```
