@@ -1,10 +1,10 @@
 ---
-title: "Session 01 - Install Python and Jupyter"
+title: "Session 01"
 date: 2021-01-04T16:15:03-05:00
 tags: []
 ---
 
-# Session 01 - Install Python and Jupyter
+# Install Python and Jupyter
 
 ## Installing Python through Anaconda
 [Python](https://python.org/) is a popular language for scientific computing, and great for general-purpose programming as well. Installing all of its scientific packages individually can be a bit difficult, however, so we recommend the all-in-one installer Anaconda.
