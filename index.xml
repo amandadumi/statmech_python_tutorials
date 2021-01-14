@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Cupper</title>
+    <title>Home on Chem 2440 Ising Model</title>
     <link>https://amandadumi.github.io/statmech_python_tutorials/</link>
-    <description>Recent content in Home on Cupper</description>
+    <description>Recent content in Home on Chem 2440 Ising Model</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 04 Jan 2021 16:02:06 -0500</lastBuildDate><atom:link href="https://amandadumi.github.io/statmech_python_tutorials/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Session03: Mathematical notation and writing to files</title>
+      <title>Session03</title>
       <link>https://amandadumi.github.io/statmech_python_tutorials/session03/</link>
       <pubDate>Mon, 04 Jan 2021 16:15:10 -0500</pubDate>
       
       <guid>https://amandadumi.github.io/statmech_python_tutorials/session03/</guid>
-      <description>Obtaining Materials For our last session, we will be downloading materials from online. Click here to download the directory as a .zip file. Unzip the repository. Navigate to statmech_python_tutorials/materials/session03_math_io/. Here you will find the jupyter notebook we will work from session03_math_io.ipynb. Launch Jupyter Notebook and work through the exercises.</description>
+      <description>Mathematical notation and writing to files Obtaining Materials For our last session, we will be downloading materials from online. Click here to download the directory as a .zip file. Unzip the repository. Navigate to statmech_python_tutorials/materials/session03_math_io/. Here you will find the jupyter notebook we will work from session03_math_io.ipynb. Launch Jupyter Notebook and work through the exercises.</description>
     </item>
     
     <item>
@@ -32,8 +32,8 @@ Setting up your Jupyter notebooks In the [setup], you learned how to start a Jup
       <pubDate>Mon, 04 Jan 2021 16:15:03 -0500</pubDate>
       
       <guid>https://amandadumi.github.io/statmech_python_tutorials/session01/</guid>
-      <description>Installing Python through Anaconda Python is a popular language for scientific computing, and great for general-purpose programming as well. Installing all of its scientific packages individually can be a bit difficult, however, so we recommend the all-in-one installer Anaconda.
- Navigate to the download page for Anaconda. Download the appropriate installer for your operating system. Make sure you get the installer listed under Python 3 (not 2.7). Double click the installer icon and follow the set-up instructions, keeping most of the default options.</description>
+      <description>Session 01 - Install Python and Jupyter Installing Python through Anaconda Python is a popular language for scientific computing, and great for general-purpose programming as well. Installing all of its scientific packages individually can be a bit difficult, however, so we recommend the all-in-one installer Anaconda.
+ Navigate to the download page for Anaconda. Download the appropriate installer for your operating system. Make sure you get the installer listed under Python 3 (not 2.</description>
     </item>
     
     <item>
