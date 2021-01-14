@@ -27,12 +27,12 @@ Setting up your Jupyter notebooks In the [setup], you learned how to start a Jup
     </item>
     
     <item>
-      <title>Session 01 - Install Python and Jupyter</title>
+      <title>Session 01</title>
       <link>https://amandadumi.github.io/statmech_python_tutorials/session01/</link>
       <pubDate>Mon, 04 Jan 2021 16:15:03 -0500</pubDate>
       
       <guid>https://amandadumi.github.io/statmech_python_tutorials/session01/</guid>
-      <description>Session 01 - Install Python and Jupyter Installing Python through Anaconda Python is a popular language for scientific computing, and great for general-purpose programming as well. Installing all of its scientific packages individually can be a bit difficult, however, so we recommend the all-in-one installer Anaconda.
+      <description>Install Python and Jupyter Installing Python through Anaconda Python is a popular language for scientific computing, and great for general-purpose programming as well. Installing all of its scientific packages individually can be a bit difficult, however, so we recommend the all-in-one installer Anaconda.
  Navigate to the download page for Anaconda. Download the appropriate installer for your operating system. Make sure you get the installer listed under Python 3 (not 2.</description>
     </item>
     
