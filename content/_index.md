@@ -4,5 +4,5 @@ title: "Home"
 ---
 
 
-Welcome to the python tutorial for Chem 2430 Statistical Mechanics
+Welcome to the python tutorial for Chem 2440 Statistical Mechanics
 
