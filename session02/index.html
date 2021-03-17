@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <meta name="generator" content="Hugo 0.79.0" />
+  <meta name="generator" content="Hugo 0.81.0" />
   <link rel="canonical" href="/statmech_python_tutorials/session02/">
 
   
@@ -244,8 +244,8 @@
   <main id="main">
     <h1>Session02</h1>
     <h2 id="getting-started">Getting Started</h2>
-<p>Python is a computer programming language that has become ubiquitous in scientific programming.  Our initial lessons will run python <em>interactively</em> through a python interpreter. We will first use a Jupyter notebook.  The [setup] page should have provided information
-on how to install and start a Jupyter notebook.  Everything included in a code block is something you could type into your python interpreter and evaluate.</p>
+<p>Python is a computer programming language that has become ubiquitous in scientific programming. Our initial lessons will run python <em>interactively</em> through a python interpreter. We will first use a Jupyter notebook. The [setup] page should have provided information
+on how to install and start a Jupyter notebook. Everything included in a code block is something you could type into your python interpreter and evaluate.</p>
 <h3 id="setting-up-your-jupyter-notebooks">Setting up your Jupyter notebooks</h3>
 <p>In the [setup], you learned how to start a Jupyter notebook. Now, we will use the notebook to execute Python code. Jupyter notebooks are divided into cells. You run a Jupyter notebook one cell at a time. To execute a cell, click inside the cell and press <code>shift+enter</code>.</p>
 <p>In the upper left corner, click where it says &ldquo;Untitled&rdquo; and change the name to &ldquo;MolSSI Workshop&rdquo;. We have now changed the name of the Jupyter Notebook.</p>
@@ -275,15 +275,15 @@ deltaS =  10.4     #kJ/(mole K)
 temp = 298      #Kelvin
 deltaG = deltaH - temp * deltaS
 </code></pre>
-<p>Notice several things about this code.  The lines that begin with <code>#</code> are comment lines.  The computer does not do anything with these comments.  They have been used here to remind the user what units each of their values are in. Comments are also often used to explain what the code is doing or leave information for future people who might use the code.</p>
-<p>When choosing variable names, you should choose informative names so that someone reading your code can tell what they represent.  Naming a variable temp or temperature is much more informative than naming that variable t.</p>
+<p>Notice several things about this code. The lines that begin with <code>#</code> are comment lines. The computer does not do anything with these comments. They have been used here to remind the user what units each of their values are in. Comments are also often used to explain what the code is doing or leave information for future people who might use the code.</p>
+<p>When choosing variable names, you should choose informative names so that someone reading your code can tell what they represent. Naming a variable temp or temperature is much more informative than naming that variable t.</p>
 <p>We can now access any of the variables from other cells. Let&rsquo;s print the value that we calculated. In the next cell,</p>
 <pre><code class="language-python">print(deltaG)
 </code></pre>
 <pre><code>-3640.7000000000003
 </code></pre>
-<p>In the previous code block, we introduced the <code>print()</code> function.  Often, we will use the print function just to make sure our code is working correctly.</p>
-<p>Note that if you do not specify a new name for a variable, then it doesn&rsquo;t automatically change the value of the variable; this is called being <em>immutable</em>.  For example if we typed</p>
+<p>In the previous code block, we introduced the <code>print()</code> function. Often, we will use the print function just to make sure our code is working correctly.</p>
+<p>Note that if you do not specify a new name for a variable, then it doesn&rsquo;t automatically change the value of the variable; this is called being <em>immutable</em>. For example if we typed</p>
 <pre><code class="language-python">print(deltaG)
 deltaG * 1000
 print(deltaG)
@@ -291,7 +291,7 @@ print(deltaG)
 <pre><code>-3640.7000000000003
 -3640.7000000000003
 </code></pre>
-<p>Nothing happened to the value of <code>deltaG</code>.  If we wanted to change the value of <code>deltaG</code> we would have to re-save the variable using the same name to overwrite the existing value.</p>
+<p>Nothing happened to the value of <code>deltaG</code>. If we wanted to change the value of <code>deltaG</code> we would have to re-save the variable using the same name to overwrite the existing value.</p>
 <pre><code class="language-python">print(deltaG)
 deltaG = deltaG * 1000
 print(deltaG)
@@ -299,7 +299,7 @@ print(deltaG)
 <pre><code>-3640.7000000000003
 -3640700.0000000005
 </code></pre>
-<p>There are situations where it is reasonable to overwrite a variable with a new value, but you should always think carefully about this.  Usually it is a better practice to give the variable a new name and leave the existing variable as is.</p>
+<p>There are situations where it is reasonable to overwrite a variable with a new value, but you should always think carefully about this. Usually it is a better practice to give the variable a new name and leave the existing variable as is.</p>
 <pre><code class="language-python">print(deltaG)
 deltaG_joules = deltaG * 1000
 print(deltaG)
@@ -310,7 +310,7 @@ print(deltaG_joules)
 -3640700000.0000005
 </code></pre>
 <h2 id="assigning-multiple-variables-at-once">Assigning multiple variables at once</h2>
-<p>Python can do what is called multiple assignment where you assign several variables their values on one line of code.  The following code block does the exact same thing as the previous code block.</p>
+<p>Python can do what is called multiple assignment where you assign several variables their values on one line of code. The following code block does the exact same thing as the previous code block.</p>
 <pre><code class="language-python">#I can assign all these variables at once
 deltaH, deltaS, temp = -541.5, 10.4, 298
 deltaG = deltaH - temp * deltaS
@@ -319,19 +319,19 @@ print(deltaG)
 <pre><code>-3640.7000000000003
 </code></pre>
 <h2 id="data-types">Data types</h2>
-<p>Each variable is some particular type of data.  The most common types of data are strings (<code>str</code>), integers (<code>int</code>), and floating point numbers (<code>float</code>).  You can identify the data type of any variable with the function <code>type(variable_name)</code>.</p>
+<p>Each variable is some particular type of data. The most common types of data are strings (<code>str</code>), integers (<code>int</code>), and floating point numbers (<code>float</code>). You can identify the data type of any variable with the function <code>type(variable_name)</code>.</p>
 <pre><code class="language-python">type(deltaG)
 </code></pre>
 <pre><code>float
 </code></pre>
-<p>You can change the data type of a variable like this.  This is called casting.</p>
+<p>You can change the data type of a variable like this. This is called casting.</p>
 <pre><code class="language-python">deltaG_string = str(deltaG)
 type(deltaG_string)
 </code></pre>
 <pre><code>str
 </code></pre>
 <h2 id="lists">Lists</h2>
-<p>Another common data structure in python is the list.  Lists can be used to group several values or variables together, and are declared using square brackets [ ]. List values are separated by commas. Python has several built in functions which can be used on lists. The built-in function <code>len</code> can be used to determine the length of a list. This code block also demonstrates how to print multiple variables.</p>
+<p>Another common data structure in python is the list. Lists can be used to group several values or variables together, and are declared using square brackets [ ]. List values are separated by commas. Python has several built in functions which can be used on lists. The built-in function <code>len</code> can be used to determine the length of a list. This code block also demonstrates how to print multiple variables.</p>
 <pre><code class="language-python"># This is a list
 energy_kcal = [-13.4, -2.7, 5.4, 42.1]
 # I can determine its length
@@ -342,7 +342,7 @@ print('The length of this list is', energy_length)
 </code></pre>
 <pre><code>The length of this list is 4
 </code></pre>
-<p>If I want to operate on a particular element of the list, you use the list name and then put in brackets which element of the list you want.  <strong>In python counting starts at zero.  So the first element of the list is <code>list[0]</code></strong></p>
+<p>If I want to operate on a particular element of the list, you use the list name and then put in brackets which element of the list you want. <strong>In python counting starts at zero. So the first element of the list is <code>list[0]</code></strong></p>
 <pre><code class="language-python"># Print the first element of the list
 print(energy_kcal[0])
 </code></pre>
@@ -356,10 +356,10 @@ print(energy_kilojoules)
 <pre><code>-11.296800000000001
 </code></pre>
 <h2 id="slices">Slices</h2>
-<p>Sometimes you will want to make a new list that is a subset of an existing list.  For example, we might want to make a new list that is just the first few elements of our previous list.  This is called a <code>slice</code>.  The general syntax is</p>
+<p>Sometimes you will want to make a new list that is a subset of an existing list. For example, we might want to make a new list that is just the first few elements of our previous list. This is called a <code>slice</code>. The general syntax is</p>
 <pre><code class="language-python">new_list = list_name[start:end]
 </code></pre>
-<p>When taking a slice, it is very important to remember how counting works in python.  Remember that counting starts at zero so the first element of a list is <code>list_name[0]</code>.  When you specify the last element for the slice, it goes <em>up to but not including</em> that element of the list.  So a slice like</p>
+<p>When taking a slice, it is very important to remember how counting works in python. Remember that counting starts at zero so the first element of a list is <code>list_name[0]</code>. When you specify the last element for the slice, it goes <em>up to but not including</em> that element of the list. So a slice like</p>
 <pre><code class="language-python">short_list = energy_kcal[0:2]
 </code></pre>
 <p>includes energy_kcal[0] and energy_kcal[1] but <em>not</em> energy_kcal[2].</p>
@@ -367,7 +367,7 @@ print(energy_kilojoules)
 </code></pre>
 <pre><code>[-13.4, -2.7]
 </code></pre>
-<p>If you do not include a start index, the slice automatically starts at <code>list_name[0]</code>.  If you do not include an end index, the slice automatically goes to the end of the list.</p>
+<p>If you do not include a start index, the slice automatically starts at <code>list_name[0]</code>. If you do not include an end index, the slice automatically goes to the end of the list.</p>
 <blockquote>
 <h2 id="check-your-understanding">Check your Understanding</h2>
 <p>What does the following code print?</p>
@@ -393,13 +393,13 @@ print(energy_kcal)
 [-13.4, -2.7, 5.4, 42.1]
 </code></pre>
 <h2 id="repeating-an-operation-many-times-for-loops">Repeating an operation many times: for loops</h2>
-<p>Often, you will want to do something to every element of a list.  The structure
-to do this is called a <code>for</code> loop.  The general structure of a <code>for</code> loop is</p>
+<p>Often, you will want to do something to every element of a list. The structure
+to do this is called a <code>for</code> loop. The general structure of a <code>for</code> loop is</p>
 <pre><code class="language-python">for variable in list:
     do things using variable
 </code></pre>
 <p>There are two very important pieces of syntax for the <code>for</code> loop. Notice the colon <code>:</code> after the word list. You will always have a colon at the end of a <code>for</code> statement. If you forget the colon, you will get an error when you try to run your code.</p>
-<p>The second thing to notice is that the lines of code under the <code>for</code> loop (the things you want to do several times) are indented. Indentation is very important in python.  There is nothing like an <code>end</code> or <code>exit</code> statement that tells you that you are finished with the loop. The indentation shows you what statements are in the loop. Each indentation is 4 spaces by convention in Python 3. However, if you are using an editor which understands Python, it will do the correct indentation for you when you press the tab key on your keyboard. In fact, the Jupyter notebook will notice that you used a colon (<code>:</code>) in the previous line, and will indent for you (so you will not need to press tab).</p>
+<p>The second thing to notice is that the lines of code under the <code>for</code> loop (the things you want to do several times) are indented. Indentation is very important in python. There is nothing like an <code>end</code> or <code>exit</code> statement that tells you that you are finished with the loop. The indentation shows you what statements are in the loop. Each indentation is 4 spaces by convention in Python 3. However, if you are using an editor which understands Python, it will do the correct indentation for you when you press the tab key on your keyboard. In fact, the Jupyter notebook will notice that you used a colon (<code>:</code>) in the previous line, and will indent for you (so you will not need to press tab).</p>
 <p>Let&rsquo;s use a loop to change all of our energies in kcal to kJ.</p>
 <pre><code class="language-python">for number in energy_kcal:
     kJ = number * 4.184
@@ -410,10 +410,10 @@ to do this is called a <code>for</code> loop.  The general structure of a <code>
 22.593600000000002
 176.1464
 </code></pre>
-<p>Now it seems like we are really getting somewhere with our program!  But it would be even better if instead of just printing the values, it saved them in a new list.  To do this, we are going to use the <code>append</code> function.  The <code>append</code> function adds a new item to the end of an existing list.  The general form of the append function is</p>
+<p>Now it seems like we are really getting somewhere with our program!  But it would be even better if instead of just printing the values, it saved them in a new list. To do this, we are going to use the <code>append</code> function. The <code>append</code> function adds a new item to the end of an existing list. The general form of the append function is</p>
 <pre><code class="language-python">list_name.append(new_thing)
 </code></pre>
-<p>Try running this block of code.  See if you can figure out why it doesn&rsquo;t work.</p>
+<p>Try running this block of code. See if you can figure out why it doesn&rsquo;t work.</p>
 <pre><code class="language-python">for number in energy_kcal:
     kJ = number * 4.184
     energy_kJ.append(kJ)
@@ -431,7 +431,7 @@ NameError                                 Traceback (most recent call last)
 
 NameError: name 'energy_kJ' is not defined
 </code></pre>
-<p>This code doesn&rsquo;t work because on the first iteration of our loop, the list <code>energy_kJ</code> doesn&rsquo;t exist.  To make it work, we have to start the list outside of the loop.  The list can be blank when we start it, but we have to start it.</p>
+<p>This code doesn&rsquo;t work because on the first iteration of our loop, the list <code>energy_kJ</code> doesn&rsquo;t exist. To make it work, we have to start the list outside of the loop. The list can be blank when we start it, but we have to start it.</p>
 <pre><code class="language-python">energy_kJ = []
 for number in energy_kcal:
     kJ = number * 4.184
@@ -442,7 +442,7 @@ print(energy_kJ)
 <pre><code class="language-bash">[-56.0656, -12.1336, 22.593600000000002, 176.1464]
 </code></pre>
 <h2 id="making-choices-logic-statements">Making choices: logic Statements</h2>
-<p>Within your code, you may need to evaluate a variable and then do something if the variable has a particular value.  This type of logic is handled by an <code>if</code> statement.  In the following example, we only append the negative numbers to a new list.</p>
+<p>Within your code, you may need to evaluate a variable and then do something if the variable has a particular value. This type of logic is handled by an <code>if</code> statement. In the following example, we only append the negative numbers to a new list.</p>
 <pre><code class="language-python">negative_energy_kJ = []
 
 for number in energy_kJ:
@@ -472,7 +472,7 @@ print(negative_numbers)
 </code></pre>
 <pre><code>[-56.0656, -11.296800000000001]
 </code></pre>
-<p>If you are comparing strings, not numbers, you use different logic operators like <code>is</code>, <code>in</code>, or <code>is not</code>.  We will see these types of logic operators used in our next lesson.</p>
+<p>If you are comparing strings, not numbers, you use different logic operators like <code>is</code>, <code>in</code>, or <code>is not</code>. We will see these types of logic operators used in our next lesson.</p>
 <p>In some cases, you will multiple cases to consider with the <code>if</code> statment. For example, let&rsquo;s say you want to find out if a number is greater than, less than or equal to a given number. For this case, we can use <code>elif</code> and <code>else</code> statment along with the <code>if</code> statment. The <code>elif</code> stands for &lsquo;else if&rsquo; and will be used to check a second conditional statement. The <code>else</code> can be used if none of the above conditions are met.</p>
 <pre><code class="language-python">a = 6
 b = 3
@@ -505,10 +505,10 @@ for i in energy_kcal:
 </ol>
 <blockquote>
 <h2 id="exercise">Exercise</h2>
-<p>The following list contains some floating point numbers and some numbers which have been saved as strings.  Copy this list exactly into your code.</p>
+<p>The following list contains some floating point numbers and some numbers which have been saved as strings. Copy this list exactly into your code.</p>
 <pre><code class="language-python">data_list = ['-12.5', 14.4, 8.1, '42']
 </code></pre>
-<p>Set up a <code>for</code> loop to go over each element of <code>data_list</code>.  If the element is a string (<code>str</code>), recast it as a float.  Save <em>all</em> of the numbers to a new list called <code>number_list</code>.  Pay close attention to your indentation!</p>
+<p>Set up a <code>for</code> loop to go over each element of <code>data_list</code>. If the element is a string (<code>str</code>), recast it as a float. Save <em>all</em> of the numbers to a new list called <code>number_list</code>. Pay close attention to your indentation!</p>
 </blockquote>
 <details>
   <summary>Solution (Click to Expand!)</summary>
@@ -523,7 +523,7 @@ print(number_list)
 </code></pre>
 </details>
 <h2 id="a-note-about-jupyter-notebooks">A note about jupyter notebooks</h2>
-<p>If you use the jupyter notebook for your python interpreter, the notebook only executes the current code block.  This can have several unintended consequences. If you change a value and then go back and run an earlier code block, it will use the new value, not the first defined value, which may give you incorrect analysis.  Similarly, if you open your jupyter notebook later, and try to run a code block in the middle, it may tell you that your variables are undefined, even though you can clearly see them defined in earlier code blocks.  But if you didn&rsquo;t re-run those code blocks, then python doesn&rsquo;t know they exist.</p>
+<p>If you use the jupyter notebook for your python interpreter, the notebook only executes the current code block. This can have several unintended consequences. If you change a value and then go back and run an earlier code block, it will use the new value, not the first defined value, which may give you incorrect analysis. Similarly, if you open your jupyter notebook later, and try to run a code block in the middle, it may tell you that your variables are undefined, even though you can clearly see them defined in earlier code blocks. But if you didn&rsquo;t re-run those code blocks, then python doesn&rsquo;t know they exist.</p>
 
   </main>
 
