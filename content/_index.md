@@ -7,4 +7,4 @@ title: "Home"
 Welcome to the python tutorial for Chem 2440 Statistical Mechanics
 
 
-This material was adapted from a Molssi Python scripting workshop. If you find that you enjoy python and want to learn more consider checking out the full workshop [here](https://education.molssi.org/python_scripting_cms/).
+This material was adapted from a MolSSI Python scripting workshop. If you find that you enjoy python and want to learn more consider checking out the full workshop [here](https://education.molssi.org/python_scripting_cms/).
